@@ -27,12 +27,7 @@ bash scripts/start_ollama.sh      # edit paths first
 python scripts/ask_llm.py
 ```
 
-## Lesson from the notebook
-
-A 3B model asked to "calculate the mean" invented a sample and answered about 40.5, and read `LS`
-as "lymphoid system". Send aggregates computed in SQL, define abbreviations in the prompt,
-and treat the model as a summariser, not a calculator.
 
 ## Data
 
-No data is included. `*.duckdb` and `results.csv` are git-ignored. Do not commit real participant data.
+No data is included. "ls_registry2.duckdb" is created using synthetic data
