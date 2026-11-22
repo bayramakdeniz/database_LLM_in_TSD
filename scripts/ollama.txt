@@ -1,0 +1,18 @@
+
+
+export OLLAMA_MODELS=scratch/p3066-bayramc/ollama/models
+export OLLAMA_HOST=127.0.0.1:11434
+
+apptainer exec --bind scratch/p3066-bayramc/ollama/models:/root/.ollama/models --env OLLAMA_MODELS=/root/.ollama/models ollama.sif ollama serve &
+
+sleep 3
+apptainer exec ollama.sif ollama list
+
+
+
+apptainer exec /tsd/p4005/data/durable/file-import/p4005-bayramc-group/ollama_ilsd/ollama/scratch/p3066-bayramc/ollama/ollama.sif ollama run qwen2.5:3b "Hello, are you working?"
+
+
+# to stop server
+
+apptainer exec ollama.sif pkill ollama
