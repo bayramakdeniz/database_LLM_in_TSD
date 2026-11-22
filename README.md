@@ -32,6 +32,6 @@ python scripts/ask_llm.py
 
 No data is included. "ls_registry2.duckdb" is created using synthetic data
 
-## An example is shown below
+## A Use case
 
-[📄 Slides (PDF)](docs/example.pdf)
+[📄 Example with synthetic data in TSD (PDF)](docs/example.pdf)
