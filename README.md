@@ -1,13 +1,12 @@
 # DuckDB + local LLM inside a secure research environment (TSD)
 
-Query registry data with SQL and talk to it with a local LLM, entirely inside an
-isolated environment (TSD): no managed database server, no external API calls.
+Database Creation and Management using duckDB. Query registry data with SQL and talk to it with a local LLM, entirely inside an
+isolated environment (TSD): without any external API calls and database server.
 
 - **DuckDB** replaces a managed PostgreSQL instance: a single file, queried from Python.
 - **Ollama** runs from an Apptainer image on the HPC node and serves a small model (`qwen2.5:3b`).
 - Everything was tested on **synthetic data** (Lynch syndrome registry: `persons`, `cancer_events`).
 
-Project page: see `docs/index.html` (enable GitHub Pages, source: `main` branch, `/docs` folder).
 
 ## Layout
 
